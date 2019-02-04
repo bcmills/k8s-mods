@@ -12,5 +12,4 @@ import (
 	_ "github.com/docker/libnetwork/ipvs"
 	_ "github.com/opencontainers/go-digest"
 	_ "github.com/opencontainers/runc/libcontainer"
-	_ "github.com/renstrom/dedent"
 )

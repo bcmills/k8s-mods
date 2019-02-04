@@ -112,7 +112,6 @@ require (
 	github.com/prometheus/common v0.2.0 // indirect
 	github.com/quobyte/api v0.1.2 // indirect
 	github.com/rancher/go-rancher v0.1.0 // indirect
-	github.com/renstrom/dedent v1.0.1-0.20180305212856-bb25b1f617cf
 	github.com/robfig/cron v0.0.0-20180505203441-b41be1df6967 // indirect
 	github.com/rubiojr/go-vhd v0.0.0-20160810183302-0bfd3b39853c // indirect
 	github.com/russross/blackfriday v2.0.0+incompatible // indirect
