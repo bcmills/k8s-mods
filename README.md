@@ -1,16 +1,13 @@
 # k8s-mods
 
-This module specifies a consistent set of requirements for various `k8s.io`
-modules (and their transitive dependencies).
+This was a transitional module to specify a consistent set of requirements for
+various `k8s.io` modules (and their transitive dependencies).
 
-To the extent possible, the `k8s.io` modules are all taken from the
-corresponding kubernetes-* version tags.
+As of `v1.15.0`, the upstream Kubernetes modules now have `go.mod` files, so
+this bootstrapping step should no longer be needed (see
+[kubernetes/kubernetes#68577](https://github.com/kubernetes/kubernetes/issues/68577)).
+Please use those modules directly instead of bootstrapping through this one.
 
-**DO NOT IMPORT FROM THIS MODULE.** Instead, use `go get -m` to impose its
-minimum requirements within your module, then run `go mod tidy` to prune away
-unnecessary dependencies:
-
-```
-$ go get -m github.com/bcmills/k8s-mods
-$ go mod tidy
-```
+Note that only the published Kubernetes subcomponents are supported as module
+dependencies. See
+[kubernetes/kubernetes#79384](https://github.com/kubernetes/kubernetes/issues/79384).
